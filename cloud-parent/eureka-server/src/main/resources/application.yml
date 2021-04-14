@@ -11,9 +11,6 @@ eureka:
     register-with-eureka: false
     # 不主动发现别人
     fetchRegistry: false
-    # 声明注册中心的地址
-    service-url:
-      defaultZone: http://localhost:8800/eureka
   server:
     # 关闭保护模式
     enable-self-preservation: false
