@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: user-service
+server:
+  port: 9902
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://cije:123456@localhost:8804/eureka/

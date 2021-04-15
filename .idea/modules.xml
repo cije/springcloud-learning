@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/cloud-parent/eureka-client/eureka-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/eureka-security-server/eureka-security-server.iml" filepath="$PROJECT_DIR$/cloud-parent/eureka-security-server/eureka-security-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/cloud-parent/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/user-service/user-service.iml" filepath="$PROJECT_DIR$/cloud-parent/user-service/user-service.iml" />
     </modules>
   </component>
 </project>
