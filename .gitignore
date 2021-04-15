@@ -1,5 +1,5 @@
 # Project exclude paths
 /cloud-parent/eureka-server/target/
 *.iml
-/targer/
-.idea
+targer/
+.idea/
