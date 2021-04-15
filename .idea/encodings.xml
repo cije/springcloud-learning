@@ -13,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/cloud-parent/hystrix-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-parent/ribbon-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-parent/ribbon-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-parent/turbine-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-parent/turbine-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-parent/user-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-parent/user-service/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

@@ -17,5 +17,6 @@ eureka:
     register-with-eureka: false
     # 不主动发现别人
     fetch-registry: false
-
+  server:
+    enableSelfPreservation: false
 

@@ -1,0 +1,19 @@
+# 应用名称
+spring:
+  application:
+    name: turbine-service
+server:
+  port: 9907
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://cije:123456@localhost:8804/eureka/
+turbine:
+  # 指定需要收集信息的服务名称
+  app-config: hystrix-service
+  # 指定服务所属集群
+  cluster-name-expression: new String('default')
+  # 以主机名和端口号来区分服务
+  combine-host-port: true
