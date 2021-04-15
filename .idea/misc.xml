@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/cloud-parent/user-service/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/ribbon-service/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/hystrix-service/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/hystrix-dashboard/pom.xml" />
       </list>
     </option>
   </component>

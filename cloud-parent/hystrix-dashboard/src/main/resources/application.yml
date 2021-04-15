@@ -1,0 +1,13 @@
+# 应用名称
+spring:
+  application:
+    name: hystrix-dashboard
+server:
+  port: 9906
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://cije:123456@localhost:8804/eureka/
+
