@@ -1,0 +1,19 @@
+# 应用名称
+spring:
+  application:
+    name: feign-service
+server:
+  port: 9909
+eureka:
+  client:
+    service-url:
+      defaultZone: http://cije:123456@localhost:8804/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+feign:
+  hystrix:
+    # 开启hystrix
+    enabled: true
+logging:
+  level:
+    com.ce.feignservice.service: debug
