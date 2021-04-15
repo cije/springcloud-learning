@@ -1,0 +1,19 @@
+# 默认路由规则
+### user-service
+GET {{zuul-proxy-prefix}}/user-service/user/1
+
+### feign-service
+GET {{zuul-proxy-prefix}}/feign-service/user/1
+
+# 自定义路由规则
+### user-service
+GET {{zuul-proxy-prefix}}/userService/user/1
+
+### feign-service
+GET {{zuul-proxy-prefix}}/feignService/user/1
+
+# actuator
+### 简单查看路由信息
+GET {{zuul-proxy}}/actuator/routes
+### 查看详细路由信息
+GET {{zuul-proxy}}/actuator/routes/details
