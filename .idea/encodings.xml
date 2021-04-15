@@ -7,6 +7,8 @@
     <file url="file://$PROJECT_DIR$/cloud-parent/eureka-security-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-parent/eureka-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-parent/eureka-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-parent/hystrix-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-parent/hystrix-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-parent/ribbon-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-parent/ribbon-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-parent/user-service/src/main/java" charset="UTF-8" />
