@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/cloud-parent/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/eureka-client/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/eureka-security-server/pom.xml" />
       </list>
     </option>
   </component>
