@@ -9,3 +9,14 @@ GET http://localhost:9914/configInfo
 
 ### cluster
 GET http://localhost:9917/configInfo
+### bus刷新
+POST http://localhost:9918/actuator/bus-refresh
+
+### bus刷新
+POST http://localhost:9918/actuator/bus-refresh/config-client:9919
+
+### amqp1
+GET http://localhost:9919/configInfo
+
+### amqp2
+GET http://localhost:9920/configInfo
