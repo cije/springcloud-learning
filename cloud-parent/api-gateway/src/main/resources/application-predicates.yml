@@ -5,10 +5,10 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: path_route #路由的ID
-          uri: ${service-url.user-service}/user/{id} #匹配后路由地址
+        - id: remote_route #路由的ID
+          uri: ${service-url.user-service} #匹配后路由地址
           predicates: # 断言，路径相匹配的进行路由
-            - Path=/user/{id}
+            - RemoteAddr=127.0.0.1/24
 server:
   port: 9921
 service-url:

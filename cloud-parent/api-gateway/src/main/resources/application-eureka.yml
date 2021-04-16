@@ -1,0 +1,31 @@
+# 应用名称
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: prefixpath_route
+          uri: lb://user-service
+          predicates:
+            - Method=GET
+          filters:
+            - PrefixPath=/user
+      discovery:
+        locator:
+          #开启从注册中心动态创建路由的功能
+          enabled: true
+          lower-case-service-id: true
+server:
+  port: 9921
+service-url:
+  user-service: http://localhost:9902
+eureka:
+  client:
+    service-url:
+      defaultZone: http://cije:123456@localhost:8804/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+logging:
+  level:
+    org.springframework.cloud.gateway: debug

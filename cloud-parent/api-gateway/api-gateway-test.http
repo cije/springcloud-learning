@@ -1,0 +1,13 @@
+###
+GET http://localhost:9921/user/1
+
+###
+GET http://localhost:9921/user/getByUsername?username=tom
+
+###
+GET  http://localhost:9921/user/testException/1
+
+###
+GET http://localhost:9921/user-service/user/1
+###
+GET http://localhost:9921/1

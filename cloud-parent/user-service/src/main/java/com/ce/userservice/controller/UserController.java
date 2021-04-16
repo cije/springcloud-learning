@@ -1,10 +1,9 @@
 package com.ce.userservice.controller;
 
+import cn.hutool.log.Log;
 import com.ce.userservice.domain.CommonResult;
 import com.ce.userservice.domain.User;
 import com.ce.userservice.service.UserService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/user")
 public class UserController {
-    private final Logger logger = LoggerFactory.getLogger(UserController.class);
+    private final Log logger = Log.get();
 
     @Autowired
     private UserService userService;
@@ -57,6 +56,14 @@ public class UserController {
     @PostMapping("/delete/{id}")
     public CommonResult<Object> delete(@PathVariable Long id) {
         userService.delete(id);
+        return CommonResult.success();
+    }
+
+    @RequestMapping("/testException/{id}")
+    public CommonResult<Object> exception(@PathVariable Long id) {
+        if (id == 1) {
+            throw new RuntimeException("错误");
+        }
         return CommonResult.success();
     }
 }
