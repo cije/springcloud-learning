@@ -27,7 +27,7 @@ zuul:
   # 禁用过滤器
   PreLogFilter:
     pre:
-      disable: true
+      disable: false
 
 # 开启查看路由的端点
 management:
