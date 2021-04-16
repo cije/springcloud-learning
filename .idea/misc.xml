@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/cloud-parent/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/config-client/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/config-security-server/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/api-gateway/pom.xml" />
       </list>
     </option>
   </component>

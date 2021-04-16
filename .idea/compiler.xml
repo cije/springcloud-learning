@@ -16,12 +16,14 @@
         <module name="config-server" />
         <module name="eureka-client" />
         <module name="hystrix-dashboard" />
+        <module name="api-gateway" />
         <module name="ribbon-service" />
         <module name="feign-service" />
         <module name="config-security-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-gateway" target="1.8" />
       <module name="cloud-parent" target="1.8" />
       <module name="config-client" target="1.8" />
       <module name="config-security-server" target="1.8" />
