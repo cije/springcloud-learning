@@ -1,0 +1,11 @@
+### 演示从配置中心获取配置
+GET http://localhost:9912/configInfo
+
+### refresh
+POST http://localhost:9912/actuator/refresh
+
+### security
+GET http://localhost:9914/configInfo
+
+### cluster
+GET http://localhost:9917/configInfo

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config: #Config客户端配置
+      profile: dev #启用配置后缀名称
+      label: dev #分支名称
+      uri: http://localhost:9911 #配置中心地址
+      name: config #配置文件名称
+server:
+  port: 9912
+eureka:
+  client:
+    service-url:
+      defaultZone: http://cije:123456@localhost:8804/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'refresh'

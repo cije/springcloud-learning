@@ -9,17 +9,23 @@
         <module name="turbine-service" />
         <module name="hystrix-service" />
         <module name="eureka-security-server" />
+        <module name="config-client" />
+        <module name="zuul-proxy" />
+        <module name="user-service" />
+        <module name="eureka-server" />
+        <module name="config-server" />
         <module name="eureka-client" />
         <module name="hystrix-dashboard" />
-        <module name="zuul-proxy" />
         <module name="ribbon-service" />
-        <module name="user-service" />
         <module name="feign-service" />
-        <module name="eureka-server" />
+        <module name="config-security-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cloud-parent" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-security-server" target="1.8" />
+      <module name="config-server" target="1.8" />
       <module name="eureka-client" target="1.8" />
       <module name="eureka-security-server" target="1.8" />
       <module name="eureka-server" target="1.8" />

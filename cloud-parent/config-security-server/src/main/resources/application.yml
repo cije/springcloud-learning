@@ -1,0 +1,23 @@
+server:
+  port: 9913
+spring:
+  application:
+    name: config-security-server
+  cloud:
+    config:
+      server:
+        # 配置存储配置信息的Git仓库
+        git:
+          uri: https://gitee.com/c__e/springcloud-config.git
+          username: c__e
+          password: ENC(Md7+gcoBPKUf++7OPRIf9/ftHWVSP3OOU5hXinAebewqknj00lAmTM1WYYzW/Nxn)
+          # 开启启动时直接从git获取配置
+          clone-on-start: true
+  security: #配置用户名和密码
+    user:
+      name: cije
+      password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://cije:123456@localhost:8804/eureka/
