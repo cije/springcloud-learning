@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        # 配置存储配置信息的Git仓库
+        git:
+          uri: https://gitee.com/c__e/springcloud-config.git
+          username: c__e
+          password: ENC(Md7+gcoBPKUf++7OPRIf9/ftHWVSP3OOU5hXinAebewqknj00lAmTM1WYYzW/Nxn)
+          # 开启启动时直接从git获取配置
+          clone-on-start: true
+          search-paths: '{application}'
+  rabbitmq:
+    host: localhost
+    port: 15672
+    username: admin
+    password: admin
+server:
+  port: 9918
+eureka:
+  client:
+    service-url:
+      defaultZone: http://cije:123456@localhost:8804/eureka/
+management:
+  endpoints: #暴露bus刷新配置的端点
+    web:
+      exposure:
+        include: 'bus-refresh'
