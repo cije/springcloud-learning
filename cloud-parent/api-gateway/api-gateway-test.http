@@ -9,5 +9,11 @@ GET  http://localhost:9921/user/testException/1
 
 ###
 GET http://localhost:9921/user-service/user/1
+
 ###
 GET http://localhost:9921/1
+
+###
+GET http://localhost:9921/api/user/1
+
+

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="turbine-service" />
         <module name="hystrix-service" />
+        <module name="admin-client" />
         <module name="eureka-security-server" />
         <module name="config-client" />
         <module name="zuul-proxy" />
@@ -18,11 +19,14 @@
         <module name="hystrix-dashboard" />
         <module name="api-gateway" />
         <module name="ribbon-service" />
+        <module name="admin-server" />
         <module name="feign-service" />
         <module name="config-security-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="admin-client" target="1.8" />
+      <module name="admin-server" target="1.8" />
       <module name="api-gateway" target="1.8" />
       <module name="cloud-parent" target="1.8" />
       <module name="config-client" target="1.8" />

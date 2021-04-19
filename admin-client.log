@@ -1,0 +1,487 @@
+2021-04-19 10:46:32.678  INFO 3752 --- [main] c.ce.adminclient.AdminClientApplication  : No active profile set, falling back to default profiles: default
+2021-04-19 10:46:34.653  INFO 3752 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=36a65c23-e306-33ae-a247-e2c2eb4d106d
+2021-04-19 10:46:35.260  INFO 3752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9923 (http)
+2021-04-19 10:46:35.320  INFO 3752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-19 10:46:35.322  INFO 3752 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-04-19 10:46:35.335  INFO 3752 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-04-19 10:46:35.335  INFO 3752 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2021-04-19 10:46:35.336  INFO 3752 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-19 10:46:35.338  INFO 3752 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-19 10:46:35.346  INFO 3752 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2021-04-19 10:46:35.674  INFO 3752 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-19 10:46:35.675  INFO 3752 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2959 ms
+2021-04-19 10:46:36.559  INFO 3752 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 10:46:37.082  INFO 3752 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-04-19 10:46:40.399  INFO 3752 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2021-04-19 10:46:40.600  INFO 3752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9923 (http) with context path ''
+2021-04-19 10:46:43.176  INFO 3752 --- [main] c.ce.adminclient.AdminClientApplication  : Started AdminClientApplication in 23.556 seconds (JVM running for 26.908)
+2021-04-19 10:46:45.523  INFO 3752 --- [RMI TCP Connection(4)-172.17.96.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-19 10:46:45.538  INFO 3752 --- [RMI TCP Connection(4)-172.17.96.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-19 10:46:45.538  INFO 3752 --- [RMI TCP Connection(4)-172.17.96.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-19 10:46:52.291 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:47:02.232 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:47:13.276 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:47:22.309 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:47:32.218 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:47:42.237 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:47:52.225 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:48:02.231 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:48:12.247 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:48:22.234 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:48:32.226 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:48:42.220 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:48:52.252 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:49:02.222 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:49:12.239 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:49:22.262 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:49:32.236 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:49:42.251 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:49:52.245 ERROR 3752 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:55:36.780  INFO 14744 --- [main] c.ce.adminclient.AdminClientApplication  : No active profile set, falling back to default profiles: default
+2021-04-19 10:55:37.647  INFO 14744 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=36a65c23-e306-33ae-a247-e2c2eb4d106d
+2021-04-19 10:55:37.900  INFO 14744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9923 (http)
+2021-04-19 10:55:37.926  INFO 14744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-19 10:55:37.926  INFO 14744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-04-19 10:55:37.936  INFO 14744 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-04-19 10:55:37.936  INFO 14744 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2021-04-19 10:55:37.936  INFO 14744 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-19 10:55:37.936  INFO 14744 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-19 10:55:37.946  INFO 14744 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2021-04-19 10:55:38.081  INFO 14744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-19 10:55:38.081  INFO 14744 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1290 ms
+2021-04-19 10:55:38.683  INFO 14744 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 10:55:39.062  INFO 14744 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-04-19 10:55:41.296  INFO 14744 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2021-04-19 10:55:41.437  INFO 14744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9923 (http) with context path ''
+2021-04-19 10:55:43.516  INFO 14744 --- [main] c.ce.adminclient.AdminClientApplication  : Started AdminClientApplication in 16.267 seconds (JVM running for 20.282)
+2021-04-19 10:55:46.638  INFO 14744 --- [RMI TCP Connection(4)-172.17.96.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-19 10:55:46.638  INFO 14744 --- [RMI TCP Connection(4)-172.17.96.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-19 10:55:46.653  INFO 14744 --- [RMI TCP Connection(4)-172.17.96.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2021-04-19 10:55:52.601 ERROR 14744 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:56:02.581 ERROR 14744 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:56:12.585 ERROR 14744 --- [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.NoSuchMethodError: org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties.getBasePath()Ljava/lang/String;
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementContextPath(ServletApplicationFactory.java:86) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.ServletApplicationFactory.getManagementBaseUrl(ServletApplicationFactory.java:77) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:154) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-2.4.1.jar:2.4.1]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.16.RELEASE.jar:5.1.16.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_251]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_251]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_251]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_251]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+
+2021-04-19 10:56:45.031  INFO 12676 --- [main] c.ce.adminclient.AdminClientApplication  : No active profile set, falling back to default profiles: default
+2021-04-19 10:56:46.830  INFO 12676 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3273793a-d875-3539-b82b-4f4267c5bd2f
+2021-04-19 10:56:47.309  INFO 12676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9923 (http)
+2021-04-19 10:56:47.354  INFO 12676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-19 10:56:47.356  INFO 12676 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-04-19 10:56:47.366  INFO 12676 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-04-19 10:56:47.366  INFO 12676 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2021-04-19 10:56:47.366  INFO 12676 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-19 10:56:47.367  INFO 12676 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-19 10:56:47.372  INFO 12676 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2021-04-19 10:56:47.876  INFO 12676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-19 10:56:47.882  INFO 12676 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2792 ms
+2021-04-19 10:56:48.526  INFO 12676 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2021-04-19 10:56:48.840  INFO 12676 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 10:56:49.404  INFO 12676 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-04-19 10:56:53.232  INFO 12676 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2021-04-19 10:56:53.394  INFO 12676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9923 (http) with context path ''
+2021-04-19 10:56:56.711  INFO 12676 --- [main] c.ce.adminclient.AdminClientApplication  : Started AdminClientApplication in 21.35 seconds (JVM running for 24.813)
+2021-04-19 10:57:00.575  INFO 12676 --- [RMI TCP Connection(3)-172.17.96.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-19 10:57:00.578  INFO 12676 --- [RMI TCP Connection(3)-172.17.96.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-19 10:57:00.593  INFO 12676 --- [RMI TCP Connection(3)-172.17.96.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2021-04-19 10:57:25.476  INFO 12676 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as a945c7a758e5
+2021-04-19 10:58:32.121  INFO 12676 --- [http-nio-9923-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia-actuator-endpoint: No access restrictor found, access to any MBean is allowed
+2021-04-19 11:01:54.287  INFO 15052 --- [main] c.ce.adminclient.AdminClientApplication  : No active profile set, falling back to default profiles: default
+2021-04-19 11:01:55.656  WARN 15052 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-04-19 11:01:55.900  INFO 15052 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=29dd5c73-c200-3e63-9fc7-2a9ad84e98bc
+2021-04-19 11:01:56.451  INFO 15052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9923 (http)
+2021-04-19 11:01:56.497  INFO 15052 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-19 11:01:56.497  INFO 15052 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-04-19 11:01:56.507  INFO 15052 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-04-19 11:01:56.507  INFO 15052 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2021-04-19 11:01:56.508  INFO 15052 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-19 11:01:56.508  INFO 15052 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-19 11:01:56.513  INFO 15052 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2021-04-19 11:01:56.808  INFO 15052 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-19 11:01:56.809  INFO 15052 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2483 ms
+2021-04-19 11:01:56.963  WARN 15052 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-04-19 11:01:56.963  INFO 15052 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-04-19 11:01:57.008  INFO 15052 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@22a0d4ea
+2021-04-19 11:01:59.639  INFO 15052 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2021-04-19 11:01:59.692  WARN 15052 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-04-19 11:01:59.693  INFO 15052 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-04-19 11:01:59.904  INFO 15052 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 11:02:03.248  INFO 15052 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 21 endpoint(s) beneath base path '/actuator'
+2021-04-19 11:02:03.641  INFO 15052 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-04-19 11:02:03.765  INFO 15052 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-04-19 11:02:06.160  INFO 15052 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-04-19 11:02:06.168  INFO 15052 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-04-19 11:02:06.414  INFO 15052 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-04-19 11:02:06.415  INFO 15052 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-04-19 11:02:06.714  INFO 15052 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-04-19 11:02:08.103  INFO 15052 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-04-19 11:02:08.104  INFO 15052 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-04-19 11:02:08.104  INFO 15052 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-04-19 11:02:08.104  INFO 15052 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-04-19 11:02:08.105  INFO 15052 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-04-19 11:02:08.105  INFO 15052 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-04-19 11:02:08.105  INFO 15052 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-04-19 11:02:08.427  INFO 15052 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-04-19 11:02:08.431  INFO 15052 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-04-19 11:02:08.433  INFO 15052 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-04-19 11:02:08.437  INFO 15052 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1618801328436 with initial instances count: 5
+2021-04-19 11:02:08.439  INFO 15052 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-CLIENT with eureka with status UP
+2021-04-19 11:02:08.440  INFO 15052 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1618801328440, current=UP, previous=STARTING]
+2021-04-19 11:02:08.443  INFO 15052 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-CLIENT/host.docker.internal:admin-client:9923: registering service...
+2021-04-19 11:02:08.497  INFO 15052 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-CLIENT/host.docker.internal:admin-client:9923 - registration status: 204
+2021-04-19 11:02:08.499  INFO 15052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9923 (http) with context path ''
+2021-04-19 11:02:08.500  INFO 15052 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9923
+2021-04-19 11:02:10.066  INFO 15052 --- [main] c.ce.adminclient.AdminClientApplication  : Started AdminClientApplication in 22.286 seconds (JVM running for 25.759)
+2021-04-19 11:02:12.421  INFO 15052 --- [RMI TCP Connection(2)-172.17.96.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-19 11:02:12.422  INFO 15052 --- [RMI TCP Connection(2)-172.17.96.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-19 11:02:12.433  INFO 15052 --- [RMI TCP Connection(2)-172.17.96.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-04-19 11:07:08.124  INFO 15052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

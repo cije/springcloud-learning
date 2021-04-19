@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: error:sping-boot-starter-admin:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/error/sping-boot-starter-admin/unknown/sping-boot-starter-admin-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/error/sping-boot-starter-admin/unknown/sping-boot-starter-admin-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/error/sping-boot-starter-admin/unknown/sping-boot-starter-admin-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
