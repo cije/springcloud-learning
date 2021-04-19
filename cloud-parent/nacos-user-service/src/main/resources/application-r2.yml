@@ -1,0 +1,15 @@
+# 应用名称
+spring:
+  application:
+    name: nacos-user-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 9924

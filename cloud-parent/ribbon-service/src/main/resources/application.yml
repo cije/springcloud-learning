@@ -17,4 +17,5 @@ eureka:
       defaultZone: http://cije:123456@localhost:8804/eureka/
 service-url:
   user-service: http://user-service
+  user-service-ip: http://localhost:9902
 

@@ -2,6 +2,7 @@ package com.ce.hystrixservice.service;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.log.Log;
 import com.ce.hystrixservice.domain.CommonResult;
 import com.ce.hystrixservice.domain.User;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCollapser;
@@ -10,8 +11,6 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheRemove;
 import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheResult;
 import com.netflix.hystrix.contrib.javanica.command.AsyncResult;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -39,7 +38,7 @@ import java.util.concurrent.Future;
 @SuppressWarnings("all")
 public class UserService {
 
-    private Logger logger = LoggerFactory.getLogger(getClass());
+    private Log logger = Log.get(getClass());
 
     @Autowired
     private RestTemplate restTemplate;

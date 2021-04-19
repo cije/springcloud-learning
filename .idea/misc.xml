@@ -20,6 +20,9 @@
         <option value="$PROJECT_DIR$/cloud-parent/api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/admin-server/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/admin-client/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/nacos-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/nacos-rabbion-service/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/nacos-ribbon-service/pom.xml" />
       </list>
     </option>
   </component>

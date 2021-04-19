@@ -4,17 +4,23 @@ spring:
     name: api-gateway
   cloud:
     gateway:
-#      routes:
-#        - id: prefixpath_route
-#          uri: lb://user-service
-#          predicates:
-#            - Method=GET
-#          filters:
-#            - PrefixPath=/user
+      routes:
+        - id: ribbon-service
+          uri: lb://ribbon-service
+          predicates:
+            - Path=/api/ribbon/**
+          filters:
+            - StripPrefix=2
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/user/**
+          filters:
+            - StripPrefix=2
       discovery:
         locator:
           #开启从注册中心动态创建路由的功能
-          enabled: true
+#          enabled: true
           lower-case-service-id: true
 server:
   port: 9921

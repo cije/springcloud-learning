@@ -1,1 +1,5 @@
+### 通过注册中心
 GET http://localhost:9904/1
+
+### 通过ip
+GET http://localhost:9904/user/1

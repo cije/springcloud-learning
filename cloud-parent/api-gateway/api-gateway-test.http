@@ -16,4 +16,16 @@ GET http://localhost:9921/1
 ###
 GET http://localhost:9921/api/user/1
 
+### ribbon-service
+GET http://localhost:9921/ribbon-service/user/1
+
+###
+GET http://localhost:9921/api/ribbon/1
+
+###
+GET http://localhost:9921/api/ribbon/user/1
+
+### /api/user
+GET http://localhost:9921/api/user/user/1
+
 
