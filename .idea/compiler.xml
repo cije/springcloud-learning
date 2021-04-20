@@ -2,11 +2,13 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="turbine-service" />
+        <module name="seata-account-service" />
         <module name="hystrix-service" />
         <module name="admin-client" />
         <module name="eureka-security-server" />
@@ -14,6 +16,7 @@
         <module name="zuul-proxy" />
         <module name="user-service" />
         <module name="eureka-server" />
+        <module name="seata-storage-service" />
         <module name="config-server" />
         <module name="eureka-client" />
         <module name="nacos-user-service" />
@@ -24,6 +27,7 @@
         <module name="feign-service" />
         <module name="config-security-server" />
         <module name="nacos-ribbon-service" />
+        <module name="seata-order-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -39,11 +43,19 @@
       <module name="eureka-server" target="1.8" />
       <module name="eurekaclient" target="1.8" />
       <module name="feign-service" target="1.8" />
+      <module name="gateway-nacos-routes" target="1.8" />
+      <module name="gateway-nacos-yml" target="1.8" />
       <module name="hystrix-dashboard" target="1.8" />
       <module name="hystrix-service" target="1.8" />
       <module name="nacos-ribbon-service" target="1.8" />
       <module name="nacos-user-service" target="1.8" />
+      <module name="oauth2-server" target="1.8" />
       <module name="ribbon-service" target="1.8" />
+      <module name="seata" target="1.8" />
+      <module name="seata-account-service" target="1.8" />
+      <module name="seata-order-service" target="1.8" />
+      <module name="seata-storage-service" target="1.8" />
+      <module name="sentinel-service" target="1.8" />
       <module name="turbine-service" target="1.8" />
       <module name="user-service" target="1.8" />
       <module name="zuul-proxy" target="1.8" />

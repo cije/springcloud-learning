@@ -23,7 +23,16 @@
         <option value="$PROJECT_DIR$/cloud-parent/nacos-user-service/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/nacos-rabbion-service/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/nacos-ribbon-service/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/seata/seata-order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/seata/seata-account-service/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/seata/seata-storage-service/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/cloud-parent/gateway-nacos-routes/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/gateway-nacos-yml/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="PersistentConfig">
