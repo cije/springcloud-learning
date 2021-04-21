@@ -19,6 +19,7 @@
         <module name="seata-storage-service" />
         <module name="config-server" />
         <module name="eureka-client" />
+        <module name="oauth2-jwt-server" />
         <module name="nacos-user-service" />
         <module name="hystrix-dashboard" />
         <module name="api-gateway" />
@@ -50,6 +51,7 @@
       <module name="hystrix-service" target="1.8" />
       <module name="nacos-ribbon-service" target="1.8" />
       <module name="nacos-user-service" target="1.8" />
+      <module name="oauth2-jwt-server" target="1.8" />
       <module name="oauth2-server" target="1.8" />
       <module name="ribbon-service" target="1.8" />
       <module name="seata" target="1.8" />

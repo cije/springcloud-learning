@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/hystrix-service/hystrix-service.iml" filepath="$PROJECT_DIR$/cloud-parent/hystrix-service/hystrix-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/nacos-ribbon-service/nacos-ribbon-service.iml" filepath="$PROJECT_DIR$/cloud-parent/nacos-ribbon-service/nacos-ribbon-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/nacos-user-service/nacos-user-service.iml" filepath="$PROJECT_DIR$/cloud-parent/nacos-user-service/nacos-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/oauth2-jwt-server/oauth2-jwt-server.iml" filepath="$PROJECT_DIR$/cloud-parent/oauth2-jwt-server/oauth2-jwt-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/oauth2-server/oauth2-server.iml" filepath="$PROJECT_DIR$/cloud-parent/oauth2-server/oauth2-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/ribbon-service/ribbon-service.iml" filepath="$PROJECT_DIR$/cloud-parent/ribbon-service/ribbon-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/seata/seata.iml" filepath="$PROJECT_DIR$/cloud-parent/seata/seata.iml" />
