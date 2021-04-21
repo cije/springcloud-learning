@@ -28,6 +28,7 @@
         <module>nacos-user-service</module>
         <module>nacos-ribbon-service</module>
         <module>seata</module>
+        <module>oauth2-server</module>
     </modules>
 
     <properties>

@@ -26,6 +26,7 @@
         <option value="$PROJECT_DIR$/cloud-parent/seata/seata-order-service/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/seata/seata-account-service/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/seata/seata-storage-service/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/oauth2-server/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

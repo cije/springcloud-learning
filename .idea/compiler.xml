@@ -24,6 +24,7 @@
         <module name="api-gateway" />
         <module name="ribbon-service" />
         <module name="admin-server" />
+        <module name="oauth2-server" />
         <module name="feign-service" />
         <module name="config-security-server" />
         <module name="nacos-ribbon-service" />
