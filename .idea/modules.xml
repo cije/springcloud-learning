@@ -6,6 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/admin-server/admin-server.iml" filepath="$PROJECT_DIR$/cloud-parent/admin-server/admin-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/cloud-parent/api-gateway/api-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/cloud-parent.iml" filepath="$PROJECT_DIR$/cloud-parent/cloud-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/cloud-stream/cloud-stream.iml" filepath="$PROJECT_DIR$/cloud-parent/cloud-stream/cloud-stream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/cloud-stream/cloud-stream-rabbitmq-customer1/cloud-stream-rabbitmq-customer1.iml" filepath="$PROJECT_DIR$/cloud-parent/cloud-stream/cloud-stream-rabbitmq-customer1/cloud-stream-rabbitmq-customer1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/cloud-stream/cloud-stream-rabbitmq-customer2/cloud-stream-rabbitmq-customer2.iml" filepath="$PROJECT_DIR$/cloud-parent/cloud-stream/cloud-stream-rabbitmq-customer2/cloud-stream-rabbitmq-customer2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/cloud-stream/cloud-stream-rabbitmq-provider/cloud-stream-rabbitmq-provider.iml" filepath="$PROJECT_DIR$/cloud-parent/cloud-stream/cloud-stream-rabbitmq-provider/cloud-stream-rabbitmq-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/config-client/config-client.iml" filepath="$PROJECT_DIR$/cloud-parent/config-client/config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/config-security-server/config-security-server.iml" filepath="$PROJECT_DIR$/cloud-parent/config-security-server/config-security-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/config-server/config-server.iml" filepath="$PROJECT_DIR$/cloud-parent/config-server/config-server.iml" />

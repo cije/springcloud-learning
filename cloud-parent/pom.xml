@@ -30,6 +30,7 @@
         <module>seata</module>
         <module>oauth2-server</module>
         <module>oauth2-jwt-server</module>
+        <module>cloud-stream</module>
     </modules>
 
     <properties>

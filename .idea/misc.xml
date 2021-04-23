@@ -27,6 +27,10 @@
         <option value="$PROJECT_DIR$/cloud-parent/seata/seata-account-service/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/seata/seata-storage-service/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/oauth2-server/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/cloud-stream/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/cloud-stream/cloud-stream-rabbitmq-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/cloud-stream/cloud-stream-rabbitmq-customer1/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/cloud-stream/cloud-stream-rabbitmq-customer2/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

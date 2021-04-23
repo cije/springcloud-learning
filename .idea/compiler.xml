@@ -7,29 +7,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="turbine-service" />
         <module name="seata-account-service" />
-        <module name="hystrix-service" />
         <module name="admin-client" />
-        <module name="eureka-security-server" />
         <module name="config-client" />
         <module name="zuul-proxy" />
+        <module name="cloud-stream-rabbitmq-provider" />
         <module name="user-service" />
         <module name="eureka-server" />
         <module name="seata-storage-service" />
-        <module name="config-server" />
-        <module name="eureka-client" />
         <module name="oauth2-jwt-server" />
         <module name="nacos-user-service" />
         <module name="hystrix-dashboard" />
-        <module name="api-gateway" />
         <module name="ribbon-service" />
+        <module name="cloud-stream-rabbitmq-customer2" />
+        <module name="nacos-ribbon-service" />
+        <module name="seata-order-service" />
+        <module name="cloud-stream-rabbitmq-customer1" />
+        <module name="turbine-service" />
+        <module name="hystrix-service" />
+        <module name="eureka-security-server" />
+        <module name="config-server" />
+        <module name="eureka-client" />
+        <module name="api-gateway" />
         <module name="admin-server" />
         <module name="oauth2-server" />
         <module name="feign-service" />
         <module name="config-security-server" />
-        <module name="nacos-ribbon-service" />
-        <module name="seata-order-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -37,6 +40,10 @@
       <module name="admin-server" target="1.8" />
       <module name="api-gateway" target="1.8" />
       <module name="cloud-parent" target="1.8" />
+      <module name="cloud-stream" target="1.8" />
+      <module name="cloud-stream-rabbitmq-customer1" target="1.8" />
+      <module name="cloud-stream-rabbitmq-customer2" target="1.8" />
+      <module name="cloud-stream-rabbitmq-provider" target="1.8" />
       <module name="config-client" target="1.8" />
       <module name="config-security-server" target="1.8" />
       <module name="config-server" target="1.8" />
