@@ -19,6 +19,10 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/feign-service/feign-service.iml" filepath="$PROJECT_DIR$/cloud-parent/feign-service/feign-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/hystrix-dashboard/hystrix-dashboard.iml" filepath="$PROJECT_DIR$/cloud-parent/hystrix-dashboard/hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/hystrix-service/hystrix-service.iml" filepath="$PROJECT_DIR$/cloud-parent/hystrix-service/hystrix-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2.iml" filepath="$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-api/micro-oauth2-api.iml" filepath="$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-api/micro-oauth2-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-auth/micro-oauth2-auth.iml" filepath="$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-auth/micro-oauth2-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-gateway/micro-oauth2-gateway.iml" filepath="$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-gateway/micro-oauth2-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/nacos-ribbon-service/nacos-ribbon-service.iml" filepath="$PROJECT_DIR$/cloud-parent/nacos-ribbon-service/nacos-ribbon-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/nacos-user-service/nacos-user-service.iml" filepath="$PROJECT_DIR$/cloud-parent/nacos-user-service/nacos-user-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/oauth2-client/oauth2-client.iml" filepath="$PROJECT_DIR$/cloud-parent/oauth2-client/oauth2-client.iml" />

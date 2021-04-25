@@ -1,0 +1,21 @@
+### 密码模式获取Token令牌
+POST {{gateway}}/auth/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&client_id=client-app&client_secret=123456&username=test&password=123456
+
+> {%
+  client.assert(response.status === 200, "Response status is not 200");
+  client.global.set("token_type",response.body.token_type);
+  client.global.set("access_token",response.body.access_token);
+  client.global.set("refresh_token",response.body.refresh_token);
+%}
+
+### 使用Token令牌访问需要权限的接口
+GET {{gateway}}/api/hello
+Authorization: {{token_type}} {{access_token}}
+
+### 访问获取当前登录用户信息的接口
+GET {{gateway}}/api/user/currentUser
+Authorization: {{token_type}} {{access_token}}
+
