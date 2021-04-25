@@ -35,6 +35,9 @@
         <option value="$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-auth/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-api/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-user/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-order/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-gateway/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

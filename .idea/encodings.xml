@@ -31,6 +31,12 @@
     <file url="file://$PROJECT_DIR$/cloud-parent/hystrix-dashboard/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-parent/hystrix-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-parent/hystrix-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-order/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-user/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-auth/src/main/java" charset="UTF-8" />

@@ -18,6 +18,7 @@
         <module name="oauth2-jwt-server" />
         <module name="micro-oauth2-gateway" />
         <module name="nacos-user-service" />
+        <module name="micro-knife4j-user" />
         <module name="hystrix-dashboard" />
         <module name="ribbon-service" />
         <module name="cloud-stream-rabbitmq-customer2" />
@@ -29,6 +30,8 @@
         <module name="eureka-security-server" />
         <module name="oauth2-client" />
         <module name="micro-oauth2-auth" />
+        <module name="micro-knife4j-order" />
+        <module name="micro-knife4j-gateway" />
         <module name="config-server" />
         <module name="micro-oauth2-api" />
         <module name="eureka-client" />
@@ -60,6 +63,10 @@
       <module name="gateway-nacos-yml" target="1.8" />
       <module name="hystrix-dashboard" target="1.8" />
       <module name="hystrix-service" target="1.8" />
+      <module name="micro-knife4j" target="1.8" />
+      <module name="micro-knife4j-gateway" target="1.8" />
+      <module name="micro-knife4j-order" target="1.8" />
+      <module name="micro-knife4j-user" target="1.8" />
       <module name="micro-oauth2" target="1.8" />
       <module name="micro-oauth2-api" target="1.8" />
       <module name="micro-oauth2-auth" target="1.8" />

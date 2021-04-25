@@ -32,6 +32,7 @@
         <module>oauth2-jwt-server</module>
         <module>cloud-stream</module>
         <module>micro-oauth2</module>
+        <module>micro-knife4j</module>
     </modules>
 
     <properties>

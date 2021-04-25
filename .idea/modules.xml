@@ -19,6 +19,10 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/feign-service/feign-service.iml" filepath="$PROJECT_DIR$/cloud-parent/feign-service/feign-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/hystrix-dashboard/hystrix-dashboard.iml" filepath="$PROJECT_DIR$/cloud-parent/hystrix-dashboard/hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/hystrix-service/hystrix-service.iml" filepath="$PROJECT_DIR$/cloud-parent/hystrix-service/hystrix-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j.iml" filepath="$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-gateway/micro-knife4j-gateway.iml" filepath="$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-gateway/micro-knife4j-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-order/micro-knife4j-order.iml" filepath="$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-order/micro-knife4j-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-user/micro-knife4j-user.iml" filepath="$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-user/micro-knife4j-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2.iml" filepath="$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-api/micro-oauth2-api.iml" filepath="$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-api/micro-oauth2-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-auth/micro-oauth2-auth.iml" filepath="$PROJECT_DIR$/cloud-parent/micro-oauth2/micro-oauth2-auth/micro-oauth2-auth.iml" />

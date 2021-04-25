@@ -1,0 +1,8 @@
+### user
+GET {{user}}/v2/api-docs
+
+### order
+GET {{order}}/v2/api-docs
+
+### gateway
+GET {{gateway}}/user-service/v2/api-docs
