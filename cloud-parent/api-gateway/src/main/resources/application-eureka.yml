@@ -17,11 +17,24 @@ spring:
             - Path=/api/user/**
           filters:
             - StripPrefix=2
+            - name: Hystrix
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/fallback
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 1 #每秒允许处理的请求数量
+                redis-rate-limiter.burstCapacity: 2 #每秒最大处理的请求数量
+                key-resolver: "#{@ipKeyResolver}" #限流策略，对应策略的Bean
       discovery:
         locator:
           #开启从注册中心动态创建路由的功能
-#          enabled: true
+          # enabled: true
           lower-case-service-id: true
+  redis:
+    host: localhost
+    port: 6379
+    password: cuijie1998
 server:
   port: 9921
 service-url:

@@ -38,6 +38,7 @@
         <option value="$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-user/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-order/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-parent/gateway-test/gateway-test1/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

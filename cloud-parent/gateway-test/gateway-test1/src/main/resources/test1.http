@@ -1,0 +1,45 @@
+###
+GET http://localhost:9960/actuator/gateway/routes
+
+###
+POST http://localhost:9960/actuator/gateway/refresh
+###
+POST http://localhost:9960/route/add
+Content-Type: application/json
+
+{
+  "id": "jd_route",
+  "uri": "https://www.jd.com",
+  "predicates": [
+    {
+      "name": "Path",
+      "args": {
+        "pattern": "/jd"
+      }
+    }
+  ],
+  "filters": [],
+  "order": 1
+}
+
+###
+POST http://localhost:9960/route/update
+Content-Type: application/json
+
+{
+  "id": "jd_route",
+  "uri": "https://www.taobao.com",
+  "predicates": [
+    {
+      "name": "Path",
+      "args": {
+        "pattern": "/jd"
+      }
+    }
+  ],
+  "filters": [],
+  "order": 1
+}
+
+###
+DELETE http://localhost:9960/route/routes/jd_route

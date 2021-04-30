@@ -33,6 +33,7 @@
         <module>cloud-stream</module>
         <module>micro-oauth2</module>
         <module>micro-knife4j</module>
+        <module>gateway-test</module>
     </modules>
 
     <properties>

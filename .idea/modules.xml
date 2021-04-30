@@ -17,6 +17,9 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/eureka-security-server/eureka-security-server.iml" filepath="$PROJECT_DIR$/cloud-parent/eureka-security-server/eureka-security-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/cloud-parent/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/feign-service/feign-service.iml" filepath="$PROJECT_DIR$/cloud-parent/feign-service/feign-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/gateway-test/gateway-test.iml" filepath="$PROJECT_DIR$/cloud-parent/gateway-test/gateway-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/gateway-test/gateway-test1/gateway-test1.iml" filepath="$PROJECT_DIR$/cloud-parent/gateway-test/gateway-test1/gateway-test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent/gateway-test/gateway-test2/gateway-test2.iml" filepath="$PROJECT_DIR$/cloud-parent/gateway-test/gateway-test2/gateway-test2.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/hystrix-dashboard/hystrix-dashboard.iml" filepath="$PROJECT_DIR$/cloud-parent/hystrix-dashboard/hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/hystrix-service/hystrix-service.iml" filepath="$PROJECT_DIR$/cloud-parent/hystrix-service/hystrix-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j.iml" filepath="$PROJECT_DIR$/cloud-parent/micro-knife4j/micro-knife4j.iml" />

@@ -29,6 +29,8 @@
         <module name="hystrix-service" />
         <module name="eureka-security-server" />
         <module name="oauth2-client" />
+        <module name="gateway-test2" />
+        <module name="gateway-test1" />
         <module name="micro-oauth2-auth" />
         <module name="micro-knife4j-order" />
         <module name="micro-knife4j-gateway" />
@@ -61,6 +63,9 @@
       <module name="feign-service" target="1.8" />
       <module name="gateway-nacos-routes" target="1.8" />
       <module name="gateway-nacos-yml" target="1.8" />
+      <module name="gateway-test" target="1.8" />
+      <module name="gateway-test1" target="1.8" />
+      <module name="gateway-test2" target="1.8" />
       <module name="hystrix-dashboard" target="1.8" />
       <module name="hystrix-service" target="1.8" />
       <module name="micro-knife4j" target="1.8" />
