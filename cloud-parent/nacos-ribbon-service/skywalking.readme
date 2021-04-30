@@ -1,0 +1,6 @@
+skywalking配置
+
+VM options:
+    -javaagent:H:\Software\DEV\apache-skywalking-apm-bin-es7\agent\skywalking-agent.jar
+Environment variables:
+    SW_AGENT_COLLECTOR_BACKEND_SERVICES=localhost:11800
